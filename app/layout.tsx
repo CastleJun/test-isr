@@ -69,6 +69,15 @@ export default function RootLayout({
                       ƒ
                     </span>
                   </a>
+                  <a
+                    href="/posts/v5"
+                    className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium relative group"
+                  >
+                    포스트 (dynamicParams)
+                    <span className="absolute -top-1 -right-1 bg-yellow-500 text-white text-xs px-1.5 py-0.5 rounded-full">
+                      ◐
+                    </span>
+                  </a>
                   <div className="relative group">
                     <button className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                       비교 테스트 ▼
@@ -78,58 +87,88 @@ export default function RootLayout({
                         <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide">빌드 결과 비교</h3>
                       </div>
                       <div className="py-2">
-                        <div className="grid grid-cols-2 gap-1 px-2">
-                          <a
-                            href="/posts/1"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
-                          >
-                            📄 포스트 1 (ISR ƒ)
-                          </a>
-                          <a
-                            href="/posts/v2/1"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-md"
-                          >
-                            📄 포스트 1 (Dynamic)
-                          </a>
-                          <a
-                            href="/posts/v3/1"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-md"
-                          >
-                            📄 포스트 1 (cookies λ)
-                          </a>
-                          <a
-                            href="/posts/v4/1"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-md"
-                          >
-                            📄 포스트 1 (notFound ƒ)
-                          </a>
+                        <div className="px-2 mb-2">
+                          <p className="text-xs text-gray-500 font-medium mb-1">포스트 1번 비교:</p>
+                          <div className="grid grid-cols-2 gap-1">
+                            <a
+                              href="/posts/1"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
+                            >
+                              🔵 V1 (ISR ƒ)
+                            </a>
+                            <a
+                              href="/posts/v2/1"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-md"
+                            >
+                              🟠 V2 (Dynamic)
+                            </a>
+                            <a
+                              href="/posts/v3/1"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-md"
+                            >
+                              🔴 V3 (cookies λ)
+                            </a>
+                            <a
+                              href="/posts/v4/1"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-md"
+                            >
+                              🟢 V4 (notFound ƒ)
+                            </a>
+                            <a
+                              href="/posts/v5/1"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded-md"
+                            >
+                              🟡 V5 (정적 ●)
+                            </a>
+                            <a
+                              href="/posts/v5/50"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded-md"
+                            >
+                              🟡 V5 (동적 λ)
+                            </a>
+                          </div>
                         </div>
-                        <div className="border-t border-gray-200 mt-2"></div>
-                        <div className="grid grid-cols-2 gap-1 px-2">
-                          <a
-                            href="/posts/100"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
-                          >
-                            📄 포스트 100 (ISR ƒ)
-                          </a>
-                          <a
-                            href="/posts/v2/100"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-md"
-                          >
-                            📄 포스트 100 (Dynamic)
-                          </a>
-                          <a
-                            href="/posts/v3/100"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-md"
-                          >
-                            📄 포스트 100 (cookies λ)
-                          </a>
-                          <a
-                            href="/posts/v4/100"
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-md"
-                          >
-                            📄 포스트 100 (notFound ƒ)
-                          </a>
+                        <div className="border-t border-gray-200"></div>
+                        <div className="px-2 mt-2">
+                          <p className="text-xs text-gray-500 font-medium mb-1">포스트 100번 비교:</p>
+                          <div className="grid grid-cols-2 gap-1">
+                            <a
+                              href="/posts/100"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
+                            >
+                              🔵 V1 (ISR ƒ)
+                            </a>
+                            <a
+                              href="/posts/v2/100"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-md"
+                            >
+                              🟠 V2 (Dynamic)
+                            </a>
+                            <a
+                              href="/posts/v3/100"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-md"
+                            >
+                              🔴 V3 (cookies λ)
+                            </a>
+                            <a
+                              href="/posts/v4/100"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-md"
+                            >
+                              🟢 V4 (notFound ƒ)
+                            </a>
+                            <a
+                              href="/posts/v5/100"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded-md"
+                            >
+                              🟡 V5 (동적 λ)
+                            </a>
+                            <a
+                              href="/posts/v5/5"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded-md"
+                            >
+                              🟡 V5 (정적 ●)
+                            </a>
+                          </div>
                         </div>
                         <div className="border-t border-gray-200 mt-2"></div>
                         <div className="grid grid-cols-2 gap-1 px-2">
