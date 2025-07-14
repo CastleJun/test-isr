@@ -78,6 +78,15 @@ export default function RootLayout({
                       ◐
                     </span>
                   </a>
+                  <a
+                    href="/posts/v6"
+                    className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium relative group"
+                  >
+                    포스트 (Axios)
+                    <span className="absolute -top-1 -right-1 bg-orange-700 text-white text-xs px-1.5 py-0.5 rounded-full">
+                      🔥
+                    </span>
+                  </a>
                   <div className="relative group">
                     <button className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                       비교 테스트 ▼
@@ -121,10 +130,10 @@ export default function RootLayout({
                               🟡 V5 (정적 ●)
                             </a>
                             <a
-                              href="/posts/v5/50"
-                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded-md"
+                              href="/posts/v6/1"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-800 rounded-md"
                             >
-                              🟡 V5 (동적 λ)
+                              🔥 V6 (Axios ƒ)
                             </a>
                           </div>
                         </div>
@@ -163,10 +172,10 @@ export default function RootLayout({
                               🟡 V5 (동적 λ)
                             </a>
                             <a
-                              href="/posts/v5/5"
-                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded-md"
+                              href="/posts/v6/100"
+                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-800 rounded-md"
                             >
-                              🟡 V5 (정적 ●)
+                              🔥 V6 (Axios ƒ)
                             </a>
                           </div>
                         </div>

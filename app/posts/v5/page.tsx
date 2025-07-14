@@ -188,6 +188,12 @@ export default async function PostsV5Page() {
             V4 (ISR + notFound)
           </Link>
           <Link
+            href="/posts/v6"
+            className="bg-orange-700 text-white px-6 py-3 rounded-lg hover:bg-orange-800 transition-colors"
+          >
+            🔥 V6 (Axios)
+          </Link>
+          <Link
             href="/"
             className="bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors"
           >
