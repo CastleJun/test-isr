@@ -21,7 +21,7 @@ export default async function PostsPage() {
           총 {posts.length}개 포스트 (모든 포스트 ISR 적용)
         </p>
       </div>
-      <PostList posts={posts} />
+      <PostList posts={posts} enablePrefetchOnHover={true} />
     </div>
   );
 }
